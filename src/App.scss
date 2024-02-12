@@ -1,0 +1,152 @@
+.bg-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 50vh;
+  background: url('./assets/bg-cafe.jpg') no-repeat fixed;
+  background-size: 100%;
+}
+
+.container{
+  position: relative;
+  margin-top: 190px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid white;
+
+  z-index: 5;
+
+  .container-box{
+    width: 85%;
+    height: fit-content;
+    background-color: #1B1D1F;
+    border-radius: 20px;
+    // border: 1px solid white;
+  
+    padding: 80px;
+    margin-bottom: 130px;
+
+    h1{
+      color: #FEF7EE;
+      text-align: center;
+      // border: 1px solid white;
+      
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+
+    .p-text{
+      color: #6F757C;
+      width: 35vw;
+      margin: auto;
+      padding-top: 10px;
+      text-align: center;
+      font-weight: 500;
+
+      line-height: 1.5;
+      // border: 1px solid white;
+
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+    }
+
+    .item-filter{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      margin: 10px;
+      
+      div{
+        margin: 10px;
+        padding: 10px;
+        color: white;
+        font-size: 14px;
+
+        border-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width: 450px) {
+      padding: 15px;
+      padding-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 50px;
+  }
+}
+
+.active{
+  background-color: #6F757C;
+}
+
+.items-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  // border: 1px solid white;
+}
+
+.item{
+  width: 290px;
+  padding: 10px;
+  margin: 8px;
+  // border: 1px solid white;
+
+  img{
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .item-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 5px 0px 5px 0px;
+
+    h3{
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    p{
+      color: black;
+      padding: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      background-color: #BEE3CC;
+      border-radius: 5px;
+    }
+  }
+
+  .item-cont{
+    display: flex;
+    align-items:center;
+    
+    img{
+      width: 23px;
+      margin: 5px 5px 5px 0px;
+    }
+
+    p{
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+
+      span{
+        color: #6F757C;
+      }
+    }
+  }
+}
